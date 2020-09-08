@@ -21,8 +21,8 @@ def main():
     table = workbook.add_worksheet("sheet1")
     for i in range(5):
         # python3.7不支持bytes与string拼接，转化为string
-        num1 = "A"+str(i)
-        num2 = "B"+str(i)
+        num1 = "A"+str(i+1)
+        num2 = "B"+str(i+1)
         t_h_out = float("{:.2f}".format(result(i)[0]))
         t_c_out = float("{:.2f}".format(result(i)[1]))
         # print("{:.2f}".format(result(i)[0])+'\t'+"{:.2f}".format(result(i)[1]))
